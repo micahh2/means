@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {scrubFormatting} from '../utils/numberFormat';
 
-const FuelSavingsResults = ({savings}) => {
+export const Graph = ({savings}) => {
   const savingsExist = scrubFormatting(savings.monthly) > 0;
   const savingsClass = savingsExist ? 'savings' : 'loss';
   const resultLabel = savingsExist ? 'Savings' : 'Loss';
@@ -34,8 +34,6 @@ const FuelSavingsResults = ({savings}) => {
   );
 };
 
-FuelSavingsResults.propTypes = {
+Graph.propTypes = {
   savings: PropTypes.object.isRequired
 };
-
-export default FuelSavingsResults;

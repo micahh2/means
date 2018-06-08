@@ -1,16 +1,16 @@
 import React from 'react';
 import {func} from 'prop-types';
-import FuelSavingsResults from './FuelSavingsResults';
-import FuelSavingsTextInput from './FuelSavingsTextInput';
-import {fuelSavings} from '../types';
+import { Graph } from './Graph';
+import { TextInput } from './TextInput';
+import { fuelSavings } from '../types';
 
-const StatusForm = ({fuelSavings, onSaveClick, onChange}) => (
+export const StatusForm = ({fuelSavings, onSaveClick, onChange}) => (
   <div>
     <table>
       <tbody>
         <tr>
           <td><label htmlFor="newMpg">New Vehicle MPG</label></td>
-          <td><FuelSavingsTextInput onChange={onChange} name="newMpg" value={fuelSavings.newMpg}/>
+          <td><Graph onChange={onChange} name="newMpg" value={fuelSavings.newMpg}/>
           </td>
         </tr>
         <tr>
