@@ -1,0 +1,474 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"dirColumn"
+			],
+			[
+				"random",
+				"randomButNot"
+			],
+			[
+				"butN",
+				"butNotCol"
+			],
+			[
+				"but",
+				"butNotCol"
+			],
+			[
+				"cens",
+				"censorBoardBinary"
+			],
+			[
+				"ex",
+				"extractSass"
+			],
+			[
+				"bummer",
+				"bummerUrl"
+			],
+			[
+				"bumm",
+				"bummerUrl"
+			],
+			[
+				"cat",
+				"catUrl"
+			],
+			[
+				"a",
+				"angle"
+			],
+			[
+				"block",
+				"block2"
+			],
+			[
+				"alter",
+				"alteredMoves"
+			],
+			[
+				"bloc",
+				"block2"
+			],
+			[
+				"with",
+				"within"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"obs",
+				"obsticles"
+			],
+			[
+				"con",
+				"convertLocationsToStep"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Package Control Messages\n========================\n\nGitGutter\n---------\n\n  1.7.15:\n  -------\n  \n    Fix:\n     - Compatibility issue of GitGutter with Snap on Ubuntu (#495)\n     - Write access regression when creating temp dir (#498)\n  \n    Enhancement:\n     - Reduce number of git --version calls (#493)\n  \n  \n  💛 Git Gutter? Want to support development?\n  \n  I've teamed up with Wes Bos to offer the following discounts:\n  \n  +------------------------------------------------+\n  |                                                |\n  |   Use the coupon code GITGUTTER for $10 off    |\n  |                                                |\n  +------------------------------------------------+\n  \n  🏅 ⭐ ES6 ⭐\n  \n  👉 ES6.io/friend/GITGUTTER\n  \n  🏅 ⭐ Sublime Text Book ⭐\n  \n  👉 SublimeTextBook.com/friend/GITGUTTER\n  \n  🏅 ⭐ React For Beginners ⭐\n  \n  👉 ReactForBeginners.com/friend/GITGUTTER\n  \n  \n  Join 15,000 other developers already learning with Wes Bos.\n  \n  These are fantastic resources - 100% money back guarantee! 🌟\n\n\nSublimeLinter\n-------------\n\n  SublimeLinter 4.5\n  =================\n  \n  Sublime Text 3.1 has been released.\n  \n  - Removed the detection of environment-readiness.\n    Sublime Text 3.1 now loads the environment before telling plugins it's ready.\n  - Removed documentation about debugging env/path issues on macOS.\n  \n  We noticed some users having an issue where a linter couldn't find \"node\" even\n  though \"node\" is in their $PATH. If you're having this problem you can remedy\n  it by patching the \"env\" for that linter in your settings like so:\n  \n  \"linters\": {\n      \"eslint\": {\n          \"env\": {\"PATH\":\"/usr/local/bin/\"}\n      }\n  }\n",
+			"settings":
+			{
+				"buffer_size": 1661,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 334.0,
+		"last_filter": "settings",
+		"selected_items":
+		[
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"js",
+				"Project: Save As"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"set",
+				"Set Syntax: JSX"
+			],
+			[
+				"set syntax jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"set syntax: jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"enable ",
+				"Package Control: Enable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"enable package",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable package",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"set syntax: jx",
+				"Set Syntax: JSX"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"men",
+				"View: Toggle Menu"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"view",
+				"View: Toggle Menu"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"new file",
+				"File: New View into File"
+			],
+			[
+				"build",
+				"Build With: test"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"instap",
+				"Package Control: Install Package"
+			],
+			[
+				"vintag",
+				"Preferences: NeoVintageous Settings"
+			],
+			[
+				"vintages",
+				"Vintageous: Toggle Vim Ctrl Keys"
+			]
+		],
+		"width": 479.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/micah/Projects/means2",
+		"/home/micah/Projects/means2/src",
+		"/home/micah/Projects/means2/src/components"
+	],
+	"file_history":
+	[
+		"/home/micah/Projects/means2/src/components/StatusForm.spec.js",
+		"/home/micah/Projects/means2/src/components/TextInput.spec.js",
+		"/home/micah/Projects/means2/means.sublime-project",
+		"/home/micah/Projects/means2/src/components/FuelSavingsResults.js",
+		"/home/micah/Projects/means2/src/components/FuelSavingsForm.spec.js",
+		"/home/micah/Projects/means2/src/components/FuelSavingsTextInput.js",
+		"/home/micah/Projects/means2/src/components/HomePage.js",
+		"/home/micah/Projects/means2/src/components/FuelSavingsForm.js",
+		"/home/micah/Projects/means2/src/components/Root.js",
+		"/home/micah/Projects/means2/src/components/App.js",
+		"/home/micah/Projects/means2/webpack.config.prod.js",
+		"/home/micah/Projects/latin-squares/main.css",
+		"/home/micah/Projects/latin-squares/index.html",
+		"/home/micah/Projects/latin-squares/unused.js",
+		"/home/micah/Projects/latin-squares/main.js",
+		"/home/micah/Projects/means2/webpack.config.dev.js",
+		"/home/micah/Projects/means2/package.json",
+		"/home/micah/Projects/means2/src/index.ejs",
+		"/home/micah/Projects/means2/src/components/App.jsx",
+		"/home/micah/Projects/here/_posts/2018-01-11-sovereignty.markdown",
+		"/home/micah/Projects/here/_posts/2018-02-07-metamorphosis.markdown",
+		"/home/micah/Projects/untitled/webpack.config.js",
+		"/home/micah/Projects/untitled/package.json",
+		"/home/micah/Projects/untitled/src/index.scss",
+		"/home/micah/Projects/untitled/src/assets/untitled",
+		"/home/micah/Projects/untitled/src/app/services/window.js",
+		"/home/micah/Projects/untitled/test.js",
+		"/home/micah/.config/sublime-text-3/Packages/User/test.sublime-build",
+		"/home/micah/Projects/untitled/.babelrc",
+		"/home/micah/Projects/here/index.md"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 99.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1661,
+								1661
+							]
+						],
+						"settings":
+						{
+							"SL.17.region_keys":
+							[
+							],
+							"auto_indent": false,
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							},
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 121.0
+	},
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "means.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"index.html"
+			],
+			[
+				"app.js",
+				"src/components/App.jsx"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"webpa",
+				"webpack.config.js"
+			],
+			[
+				".gi",
+				".gitignore"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"_vintageous_last_buffer_search": "Fuel",
+		"_vintageous_last_buffer_search_command": "vi_slash",
+		"_vintageous_reset_during_init": true,
+		"vintage":
+		{
+			"_cmdline_cd": "/home/micah/Projects/means2/src/components"
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
