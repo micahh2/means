@@ -1,0 +1,26 @@
+
+.form-main {
+
+  padding: 10px;
+  width: 100%;
+
+  .form-accounts-title {
+    margin-top: 0;
+  }
+
+
+  .form-accounts {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead td {
+      border-bottom: 1px solid grey;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+
+    tbody td {
+      padding-top: 10px;
+    }
+  }
+}

@@ -1,6 +1,6 @@
-// Set up your root reducer here...
- import { combineReducers } from 'redux';
+import { combineReducers } from 'redux';
+import * as fromAccounts from './accounts';
 
  export default combineReducers({
-   root: (state = {}) => state
+   accounts: fromAccounts.reducer
  });

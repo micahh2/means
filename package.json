@@ -30,6 +30,7 @@
   "license": "MIT",
   "dependencies": {
     "c3": "0.6.2",
+    "formulajs": "1.0.8",
     "object-assign": "4.1.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import c3 from 'c3';
+import { PropTypes } from 'prop-types';
 
 import 'c3/c3.css';
 import '../styles/graph.scss';
@@ -18,18 +19,31 @@ export class Graph extends Component {
       data: {
         columns: [
           ['data1', 30, 200, 100, 400, 150, 250],
-          ['data2', 50, 20, 10, 40, 15, 25],
         ]
       },
     });
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.data !== this.props.data) {
+      this.chart.load({
+        columns: [
+          ['data1', ...this.props.data]
+        ]
+      });
+    }
+  }
+
   render() {
     return (<div
       style={{width: "100%", height: "100%"}}
-      class="graph-cont"
+      className="graph-cont"
       id={this.state.chartId}
     />);
   }
 }
+
+Graph.propTypes = {
+  data: PropTypes.array,
+};
 
