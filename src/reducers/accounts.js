@@ -1,6 +1,7 @@
+import { uuid } from '../helpers/uuid';
 
 const initialState = {
-  list: [{ name: 'Savings', additions: 0, interestRate: 0.08, balance: 0 }],
+  list: [{ id: uuid(), name: 'Savings', additions: 0, interestRate: 0.08, balance: 0 }],
 };
 
 export function reducer(state = initialState, action) {
@@ -8,8 +9,19 @@ export function reducer(state = initialState, action) {
     case 'UPDATE_ACCOUNT':
       return {
         ...state,
+        list: state.list.map((t) => {
+          if (t.id === action.payload.id) {
+            return { ...t, [action.payload.prop]: parseFloat(action.payload.value) };
+          }
+          return t;
+        })
+      };
+    case 'ADD_ACCOUNT':
+      return {
+        ...state,
         list: [
-          { ...state.list[0], [action.payload.prop]: parseFloat(action.payload.value) }
+          ...state.list,
+          { id: uuid(), name: `New One (${state.list.length})`, additions: 0, interestRate: 0, balance: 0 }
         ]
       };
   }

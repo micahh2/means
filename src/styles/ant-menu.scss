@@ -1,0 +1,16 @@
+
+.antmenu-dots {
+  transform: rotate(90deg);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+
+  &:active {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+.antmenu-popup {
+  height: 0;
+  width: 0;
+}
