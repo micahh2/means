@@ -7,6 +7,6 @@ export function addAccount() {
   return { type: 'ADD_ACCOUNT' };
 }
 
-export function toggleAntMenu(payload) {
-  return { type: 'TOGGLE_ANT_MENU', payload };
+export function deleteAccount(payload) {
+  return { type: 'DELETE_ACCOUNT', payload };
 }
