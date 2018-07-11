@@ -1,7 +1,7 @@
 import { uuid } from '../helpers/uuid';
 
 const initialState = {
-  list: [{ id: uuid(), name: 'Income', amount: 0, increaseRate: 0.08, schedule: 0, target: null }],
+  list: [{ id: uuid(), name: 'Income', amount: 0, increaseRate: 0.08, schedule: 0, target: -1 }],
 };
 
 export function reducer(state = initialState, action) {

@@ -10,7 +10,7 @@ export const getAccounts = (state) => state.accounts.list;
 export const getCashflows = (state) => state.cashflows.list;
 
 export const getAdditions = (cashflows, id, i = 0) => cashflows
-  .filter(t => t.target == id)
+  .filter(t => t.target == id && typeof (t.amount + t.increaseRate) === 'number')
   .reduce((a, b) => a + Math.pow(1+b.increaseRate, i) * b.amount, 0);
 
 export const getProjection = createSelector(getAccounts, getCashflows, (accounts, cashflows) => {

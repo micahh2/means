@@ -14,12 +14,19 @@ export class Graph extends Component {
   }
 
   componentDidMount() {
+    const title = 'net-worth';
     this.chart = c3.generate({
       bindto: `#${this.state.chartId}`,
       data: {
         columns: [
-          ['data1', 30, 200, 100, 400, 150, 250],
-        ]
+          [title, 30, 200, 100, 400, 150, 250],
+        ],
+        types: {
+          [title]: 'area-spline',
+        },
+        colors: {
+          [title]: '#13AA30',
+        }
       },
     });
   }
@@ -28,7 +35,7 @@ export class Graph extends Component {
     if (prevProps.data !== this.props.data) {
       this.chart.load({
         columns: [
-          ['data1', ...this.props.data]
+          ['net-worth', ...this.props.data]
         ]
       });
     }
