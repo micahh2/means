@@ -14,8 +14,8 @@ export class _Taxes extends React.Component {
           <thead>
             <tr>
               <td>Name</td>
-              <td>Bracket</td>
-              <td>Rate</td>
+              <td>Bracket & Rate</td>
+              <td></td>
               <td>Increase Rate</td>
               <td>Target</td>
               <td></td>
@@ -32,33 +32,45 @@ export class _Taxes extends React.Component {
                       { 
                         tax.brackets.map((bracket, subIndex) => (<tr key={'tax' +index + 'bracket' + subIndex}>
                         <td>
-                          <InputPercent
-                            onChange={this.props.updateTaxBracket(tax.id, bracket.id, 'threshold')}/>
+                          <input
+                            type="number"
+                            value={bracket.threshold}
+                            onChange={this.props.updateTaxBracket(tax.id, subIndex, 'threshold')}/>
                         </td>
                         <td>
                           <InputPercent
-                            onChange={this.props.updateTaxBracket(tax.id, bracket.id, 'taxRate')}/>
+                            value={bracket.rate}
+                            onChange={this.props.updateTaxBracket(tax.id, subIndex, 'rate')}/>
                         </td>
                         </tr>))
                       }
+                      <tr>
+                        <td>
+                          <button onClick={this.props.addTaxBracket(tax.id)}>+</button>
+                          <button onClick={this.props.deleteTaxBracket(tax.id)}>-</button>
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
+              </td>
+              <td>
+                <InputPercent
+                  value={tax.increaseRate}
+                  onChange={this.props.updateTax(tax.id, 'increaseRate')}/>
               </td>
               <td>
                 <select
                   onChange={this.props.updateTax(tax.id, 'target')}
                   value={tax.target}
                 >
+                  <option value={-1}>Select</option>
                   { targets.map((t, subIndex) => <option key={'tax' + index +'target' + subIndex} value={t.id}>{ t.name }</option>) }
                 </select>
               </td>
               <td>
                 <button onClick={this.props.deleteTax(tax.id)}>Delete</button>
               </td>
-              <td>
-                <button onClick={this.props.deleteTax(tax.id)}>Delete</button>
-              </td>
-              </tr>))
+            </tr>))
           }
           </tbody>
         </table>

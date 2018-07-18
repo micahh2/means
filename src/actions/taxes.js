@@ -22,3 +22,5 @@ export function updateTaxBracket(payload) {
 export function deleteTaxBracket(payload) {
   return { type: 'DELETE_TAX_BRACKET', payload };
 }
+
+

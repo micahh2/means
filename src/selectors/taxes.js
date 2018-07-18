@@ -1,4 +1,11 @@
-import * as taxActions from '../actions/taxes';
+import {
+  addTax,
+  deleteTax,
+  updateTax,
+  addTaxBracket,
+  deleteTaxBracket,
+  updateTaxBracket
+} from '../actions/taxes';
 
 export function getTargets(state) {
   return [].concat(state.accounts.list).concat(state.cashflows.list);
@@ -12,23 +19,23 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   updateTax: (id, prop) => (event) => {
     const value = typeof event === 'object' ? event.target.value : event;
-    dispatch(taxActions.updateTax({ id, prop, value }));
+    dispatch(updateTax({ id, prop, value }));
   },
   updateTaxBracket: (id, index, prop) => (event) => {
     const value = typeof event === 'object' ? event.target.value : event;
-    dispatch(taxActions.updateTaxBracket({ id, index, prop, value }));
+    dispatch(updateTaxBracket({ id, index, prop, value }));
   },
   addTax: () => () => {
-    dispatch(taxActions.addTax());
+    dispatch(addTax());
   },
   addTaxBracket: (id) => () => {
-    dispatch(taxActions.addTaxBracket({ id }));
+    dispatch(addTaxBracket({ id }));
   },
   deleteTax: (id) => () => {
-    dispatch(taxActions.deleteTax({ id }));
+    dispatch(deleteTax({ id }));
   },
   deleteTaxBracket: (id, index) => () => {
-    dispatch(taxActions.deleteTax({ id, index }));
+    dispatch(deleteTaxBracket({ id, index }));
   },
 });
 

@@ -1,6 +1,6 @@
 import { uuid } from '../helpers/uuid';
 
-const initialState = {
+export const initialState = {
   list: [
     {
       id: uuid(),
@@ -49,7 +49,13 @@ export function reducer(state = initialState, action) {
         ...state,
         list: [
           ...state.list,
-          { id: uuid(), name: `New One (${state.list.length})`, additions: 0, interestRate: 0, balance: 0 }
+          {
+            id: uuid(),
+            name: `New One (${state.list.length})`,
+            brackets: [{ threshold: 10000, rate: .035 }],
+            increaseRate: 0.08,
+            target: -1
+          }
         ]
       };
 
@@ -75,7 +81,8 @@ export function reducer(state = initialState, action) {
         ...state,
         list: state.list.map(t => {
           if (action.payload.id === t.id) {
-            return { ...t, brackets: t.brackets.filter((k, index) => index !== action.payload.index) };
+            const dIndex = action.payload.index == null ? t.brackets.length - 1 : action.payload.index;
+            return { ...t, brackets: t.brackets.filter((k, index) => index !== dIndex) };
           }
           return t;
         })
