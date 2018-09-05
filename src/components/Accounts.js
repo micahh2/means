@@ -45,7 +45,7 @@ export class _Accounts extends React.Component {
               />
               </td>
               <td>
-                <button onClick={this.props.deleteAccount(account.id)}>Delete</button>
+                <button className="delete-button" onClick={this.props.deleteAccount(account.id)}>Delete</button>
               </td>
               </tr>))
           }

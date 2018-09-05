@@ -1,19 +1,26 @@
+@import "./popup";
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .app-main {
-  padding: 0 10px 10px 10px;
 }
 
 .app-title {
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 .app-graph {
   width: 100%;
+  padding: 10px 50px;
 }
 
 .app-form {
-  background-color: lightgrey;
+  background-color: #efefef;
   margin-top: 30px;
   width: 100%;
-  height: 800px;
 }
+
+

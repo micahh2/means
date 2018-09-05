@@ -1,7 +1,7 @@
 
 .form-main {
 
-  padding: 10px;
+  padding: 10px 50px;
   width: 100%;
 
   .form-accounts-title {
@@ -17,14 +17,70 @@
     width: 100%;
     border-collapse: collapse;
 
+    table {
+      border-collapse: collapse;
+    }
+
     thead td {
       border-bottom: 1px solid grey;
       font-weight: bold;
       padding-bottom: 10px;
     }
 
-    tbody td {
-      padding-top: 10px;
+    & > table > tbody > tr:nth-child(even),
+    & > tbody > tr:nth-child(even),
+    & > table > tr:nth-child(even) {
+      background-color: lightgrey;
     }
+    
+    .delete-button,
+    .end-button {
+      float: right;
+    }
+  }
+
+  .form-sub-section,
+  .form-sub-section-gray {
+    padding: 10px 30px;
+
+    & > h3 {
+      margin-top: 0;
+    }
+  }
+
+  .form-sub-section-gray {
+    background-color: lightgrey;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #afafaf;
+    padding: 6px 9px;  
+    max-width: 200px;
+    width: 100%;
+
+    &[type="radio"] {
+      width: auto;
+    }
+
+    &[type="number"] {
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      -moz-appearance: textfield;
+      margin: 0;
+      width: 50px;
+    }
+
+    &:focus {
+      background-color: white;
+    }
+  }
+
+  button {
+    background-color: #efefef;
+    border: 1px solid grey;
+    padding: 6px 19px;
   }
 }

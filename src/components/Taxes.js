@@ -47,6 +47,8 @@ export class _Taxes extends React.Component {
                       <tr>
                         <td>
                           <button onClick={this.props.addTaxBracket(tax.id)}>+</button>
+                        </td>
+                        <td>
                           <button onClick={this.props.deleteTaxBracket(tax.id)}>-</button>
                         </td>
                       </tr>
@@ -68,7 +70,7 @@ export class _Taxes extends React.Component {
                 </select>
               </td>
               <td>
-                <button onClick={this.props.deleteTax(tax.id)}>Delete</button>
+                <button className="delete-button" onClick={this.props.deleteTax(tax.id)}>Delete</button>
               </td>
             </tr>))
           }

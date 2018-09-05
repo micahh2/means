@@ -11,11 +11,12 @@ export function reducer(state = initialState, action) {
         ...state,
         list: state.list.map((t) => {
           if (t.id === action.payload.id) {
-            return { ...t, [action.payload.prop]: parseFloat(action.payload.value) };
+            return { ...t, [action.payload.prop]: action.payload.value };
           }
           return t;
         })
       };
+
     case 'ADD_ACCOUNT':
       return {
         ...state,
@@ -24,6 +25,7 @@ export function reducer(state = initialState, action) {
           { id: uuid(), name: `New One (${state.list.length})`, interestRate: 0, balance: 0 }
         ]
       };
+
     case 'DELETE_ACCOUNT':
       return {
         ...state,
