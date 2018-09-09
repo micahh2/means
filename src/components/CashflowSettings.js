@@ -16,10 +16,10 @@ export function CashflowSettings(props) {
       <div className="form-sub-section">
         <h3>Settings</h3>
         <label htmlFor="cashflowStart">Start {period}</label>
-        <input type="number" id="cashflowStart" onChange={props.updateCashflow(cashflow.id, 'start')} />
+        <input type="number" id="cashflowStart" onChange={props.updateCashflow(cashflow.id, 'start')} value={cashflow.start} />
 
         <label htmlFor="cashflowEnd">End {period}</label>
-        <input type="number" id="cashflowEnd" onChange={props.updateCashflow(cashflow.id, 'end')} />
+        <input type="number" id="cashflowEnd" onChange={props.updateCashflow(cashflow.id, 'end')} value={cashflow.end} />
       </div>
       <div className="form-sub-section-gray">
         <h3>Changes</h3>

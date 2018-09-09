@@ -1,7 +1,11 @@
 import { uuid } from '../helpers/uuid';
 
+export function createAccount({ name, length }) {
+  return { id: uuid(), name: name || `New Account (${length || 1})`, interestRate: 0, balance: 0 };
+}
+
 const initialState = {
-  list: [{ id: uuid(), name: 'Savings', interestRate: 0.08, balance: 0 }],
+  list: [{ ...createAccount({ name: 'Savings' }), interestRate: 0.08 }],
 };
 
 export function reducer(state = initialState, action) {
