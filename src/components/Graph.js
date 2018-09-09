@@ -19,7 +19,7 @@ export class Graph extends Component {
       bindto: `#${this.state.chartId}`,
       data: {
         columns: [
-          [title, 30, 200, 100, 400, 150, 250],
+          [title, ...this.props.data],
         ],
         types: {
           [title]: 'area-spline',
@@ -29,9 +29,11 @@ export class Graph extends Component {
         }
       },
     });
+    // Very bad hack
+    setTimeout(() => this.componentDidUpdate(), 1000);
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps = { data: null }) {
     if (prevProps.data !== this.props.data) {
       this.chart.load({
         columns: [

@@ -23,6 +23,7 @@ export class _Cashflows extends React.Component {
           <td>Amount</td>
           <td>Increase Rate</td>
           <td>Target</td>
+          <td>Source</td>
           <td># per year</td>
           <td></td>
         </tr>
@@ -53,6 +54,18 @@ export class _Cashflows extends React.Component {
                   {
                     accounts.map((t, index) => (
                       <option key={'target'+index} value={t.id}>
+                        {t.name}
+                      </option>
+                    ))
+                  }
+                </select>
+              </td>
+              <td>
+                <select onChange={this.props.updateCashflow(cashflow.id, 'source')} value={cashflow.source}>
+                  <option value={-1} >[External]</option>
+                  {
+                    accounts.map((t, index) => (
+                      <option key={'source'+index} value={t.id}>
                         {t.name}
                       </option>
                     ))
